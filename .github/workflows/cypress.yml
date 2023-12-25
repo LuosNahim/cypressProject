@@ -6,13 +6,15 @@ jobs:
     strategy:
       fail-fast: false # https://github.com/cypress-io/github-action/issues/48
       matrix:
-        containers: [1, 2] # Uses 2 parallel instances
+        containers: [1] # [1, 2] for parallelization
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Cypress run
         # Uses the official Cypress GitHub action https://github.com/cypress-io/github-action
         uses: cypress-io/github-action@v6
+        with:
+          record: true
         env:
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
