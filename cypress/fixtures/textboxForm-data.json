@@ -1,0 +1,6 @@
+{
+  "fullName": "Fake Name from fixtures",
+  "email": "hello@cypress",
+  "currentAddress": "Current data for responses to routes",
+  "permanentAddress": "Permanent for responses to routes"
+}
