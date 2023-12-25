@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --record"
+    "cypress:run": "cypress run --record",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "lint": "standard"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
   }
 }
