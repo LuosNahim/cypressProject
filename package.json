@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --record",
+    "cypress:run": "cypress run --record ${CYPRESS_RECORD_KEY}",
     "cypress:run:chrome": "cypress run --browser chrome",
     "lint": "standard"
   },
