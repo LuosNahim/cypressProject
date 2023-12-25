@@ -18,3 +18,10 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+beforeEach(() => {
+    Cypress.on('uncaught:exception', (err) => {
+        console.log('Displaying error message after exception', err.message)
+        return false
+    })
+})

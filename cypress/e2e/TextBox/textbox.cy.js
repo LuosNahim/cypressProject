@@ -7,11 +7,6 @@ describe('Text Box Page - Form Functionalities', () => {
         cy.fixture('textboxForm-data.json').as('data')
     })
     it('Email is verified whether is valid or no', function() {
-        Cypress.on('uncaught:exception', (err) => {
-            cy.log('Error Message:',err.message)
-            return false
-        })
-
         cy.visit('/text-box')
         textBoxPage.writeFullName(`${this.data['fullName']}`)
         textBoxPage.writeEmail(`${this.data['email']}`)
