@@ -7,9 +7,8 @@ describe('Text Box Page - Form Functionalities', () => {
         cy.fixture('textboxForm-data.json').as('data')
     })
     it('Email is verified whether is valid or no', function() {
-        Cypress.on('uncaught:exception', (err, runnable) => {
-            // returning false here prevents Cypress from
-            // failing the test
+        Cypress.on('uncaught:exception', (err) => {
+            cy.log('Error Message:',err.message)
             return false
         })
 
