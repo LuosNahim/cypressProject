@@ -24,3 +24,4 @@
 ## Check cypress.config.js for environment variables
 * baseUrl
 
+Check the report on Cypress Cloud
